@@ -3,7 +3,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manu Malempati</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
@@ -11,28 +11,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    /* Set the background color and make the canvas fixed full-screen */
-    body {
-      background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Set the height of the body to fill the entire viewport */
-    }
-
     /* Define the custom font and fallback font families */
     #loading-text {
-      font-family: 'Bangers', cursive;
+        font-family: 'Bangers', cursive;
       text-transform: uppercase;
       color: white;
       font-size: 88px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);                                  
       background: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
+    }
+
+    /* Media query for iPhone 14 and 13 */
+    @media only screen and (max-device-width: 414px) {
+      #loading-text {
+        font-size: 44px;
+      }
     }
   </style>
 </head>
